@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/tumpuls/',
+  base: '/web-tumpuls/',
   plugins: [react()],
   server: {
     port: 5193
