@@ -1,0 +1,241 @@
+/* Contact Page Specific Styles */
+.contact-container {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem 6rem;
+}
+
+.contact-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    /* Desktop: two-column layout with gap (form on right). Mobile is handled by media queries. */
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* Contact Info Side */
+.contact-info {
+    flex: 1;
+}
+
+.page-title {
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.contact-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3rem;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.social-btn {
+    /* Override glass-card animation */
+    animation: none;
+    transform: none;
+    position: relative;
+    width: auto;
+    flex-direction: row;
+    gap: 10px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-white);
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    background: var(--neon-green);
+    color: var(--text-black);
+    border-color: var(--neon-green);
+    box-shadow: 0 10px 20px rgba(163, 255, 0, 0.2);
+}
+
+.social-btn span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Form Side */
+.contact-form-container {
+    flex: 1;
+    /* Override glass-card */
+    animation: none;
+    transform: none;
+    position: relative;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    color: var(--text-white);
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus States */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-bottom-color: var(--neon-green);
+}
+
+.input-group input:focus ~ label,
+.input-group textarea:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 0.85rem;
+    color: var(--neon-green);
+    font-weight: 600;
+}
+
+.submit-btn {
+    background: var(--neon-green);
+    color: var(--text-black);
+    border: none;
+    padding: 1.2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background: var(--text-white);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.form-status {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-height: 20px;
+}
+
+.status-success {
+    color: var(--neon-green);
+}
+
+.status-error {
+    color: #ff4b4b;
+}
+
+/* Active Nav Link */
+.nav-links a.active {
+    color: var(--neon-green);
+    position: relative;
+}
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--neon-green);
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .contact-info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem;
+    }
+    .contact-form-container {
+        padding: 2rem 1.5rem;
+    }
+    .page-title {
+        font-size: 4rem;
+    }
+}
+
+/* Ensure the form box (glass-card) is visible on very small screens
+   — some global styles hide .glass-card at <=480px; override that here */
+@media (max-width: 480px) {
+    .glass-card {
+        display: flex !important;
+    }
+    .contact-form-container {
+        display: flex !important;
+        width: 100%;
+        padding: 1.5rem !important;
+    }
+    .contact-wrapper {
+        gap: 2rem;
+    }
+}
