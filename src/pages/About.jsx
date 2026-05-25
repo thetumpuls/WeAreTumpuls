@@ -6,27 +6,27 @@ const teamMembers = [
     {
         name: "Fauzul Adhim",
         role: "Mahasiswa Teknik Arsitektur UMJ",
-        img: "/adhim.JPG"
+        img: "./adhim.JPG"
     },
     {
         name: "Taufik Hidayat",
         role: "Fresh Graduate Teknik Informatika UMJ",
-        img: "/topik.JPG"
+        img: "./topik.JPG"
     },
     {
         name: "Fauzan Azima",
         role: "Fresh Graduate Teknik Informatika UMJ",
-        img: "/ojan.JPG"
+        img: "./ojan.JPG"
     },
     {
         name: "Hady Muhammad",
         role: "Mahasiswa Teknik Sipil UMJ",
-        img: "/hady.JPG"
+        img: "./hady.JPG"
     },
     {
         name: "Muhammad Zikri",
         role: "Mahasiswa Teknik Mesin UMJ",
-        img: "/jikri.JPG"
+        img: "./jikri.JPG"
     }
 ];
 
