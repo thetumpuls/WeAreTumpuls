@@ -77,6 +77,14 @@ const Work = () => {
       tags: 'Website, Backend + AI',
       image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       link: '/work.html/ai-dashboard'
+    },
+    {
+      id: 'wedding-1',
+      category: 'website',
+      title: 'Digital Wedding Website',
+      tags: 'Website, Frontend, React',
+      image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      link: '/work.html/wedding-website'
     }
   ];
 

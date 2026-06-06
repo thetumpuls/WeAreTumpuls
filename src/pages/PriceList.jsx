@@ -147,7 +147,7 @@ const PriceList = () => {
                     
                     <button onClick={() => {
                         const text = `Halo The Tumpul's, saya tertarik untuk memesan layanan ${selectedService.name} ${selectedService.type}. Boleh minta info lebih lanjut?`;
-                        window.open(`https://wa.me/6289602693952?text=${encodeURIComponent(text)}`, '_blank');
+                        window.open(`https://wa.me/6285781021417?text=${encodeURIComponent(text)}`, '_blank');
                     }} style={{
                       background: 'var(--neon-green)',
                       color: '#000',

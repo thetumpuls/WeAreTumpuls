@@ -59,6 +59,16 @@ const projects = [
     tech: 'AI Integration, React, Python',
     description: 'Dashboard analitik berbasis Artificial Intelligence (AI). Menampilkan visualisasi data cerdas secara real-time dan analisis otomatis.',
     linkType: 'hosting'
+  },
+  {
+    id: 'wedding-website',
+    title: 'Digital Wedding Website',
+    category: 'website',
+    img: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    tech: 'React, Frontend, Animation',
+    description: 'Website undangan pernikahan digital yang elegan, modern, dan interaktif. Dilengkapi dengan animasi dan fitur RSVP untuk tamu undangan.',
+    linkType: 'github',
+    link: 'https://github.com/AzimaF/web-merried'
   }
 ];
 
@@ -81,6 +91,7 @@ const ProjectDetail = () => {
 
   const getLinkText = () => {
     if (project.link) {
+        if (project.linkType === 'github') return 'View GitHub Repo';
         return project.linkType === 'figma' ? 'View Figma Design' : 'View Live Hosting';
     }
     if (project.linkType === 'figma') return 'View Figma (Link will be added soon)';

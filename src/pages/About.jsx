@@ -26,7 +26,7 @@ const teamMembers = [
     {
         name: "Muhammad Zikri",
         role: "Mahasiswa Teknik Mesin UMJ",
-        img: "./jikri.JPG"
+        img: "./ziqri.png"
     }
 ];
 
