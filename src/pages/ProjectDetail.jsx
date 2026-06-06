@@ -12,7 +12,7 @@ const projects = [
     tech: 'React, Node.js, Database',
     description: 'Website company profile modern, responsif, dan siap digunakan untuk kebutuhan bisnis e-commerce. Dilengkapi dengan backend dan integrasi database.',
     linkType: 'hosting',
-    link: 'https://azimaf.github.io/web-car/'
+    link: 'https://byddealerserpong.com/'
   },
   {
     id: 'pos-mobile',
