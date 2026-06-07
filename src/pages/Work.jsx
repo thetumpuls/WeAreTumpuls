@@ -41,7 +41,7 @@ const Work = () => {
     {
       id: 'mobile-1',
       category: 'mobile',
-      title: 'Aplikasi Kasir Mobile POS',
+      title: 'Aplikasi Pencatatan Keuangan',
       tags: 'Aplikasi Mobile, Database',
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       link: '/work.html/pos-mobile'
@@ -49,7 +49,7 @@ const Work = () => {
     {
       id: 'social-1',
       category: 'social',
-      title: 'Manajemen Instagram Cafe',
+      title: 'Create Logo or Change Logo',
       tags: 'Sosial Media, Feed Design',
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       link: '/work.html/cafe-social'
@@ -57,7 +57,7 @@ const Work = () => {
     {
       id: 'banner-1',
       category: 'banner',
-      title: 'X-Banner Wisuda Mahasiswa',
+      title: 'X-Banner Wisuda',
       tags: 'Banner Design, Print',
       image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       link: '/work.html/banner-wisuda'
@@ -65,7 +65,7 @@ const Work = () => {
     {
       id: 'uiux-1',
       category: 'uiux',
-      title: 'Redesign UI/UX Portal Akademik',
+      title: 'UI/UX Aplikasi Kesehatan Tanaman',
       tags: 'UI/UX, Website Design',
       image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       link: '/work.html/uiux-portal'

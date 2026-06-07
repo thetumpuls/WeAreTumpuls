@@ -38,7 +38,7 @@ const PriceList = () => {
     ],
     social_media: [
       { id: 'soc-feed', name: 'FEED INSTAGRAM', type: '(1 FEED)', price: 'Rp 200.000', features: ['Custom Design', 'High Resolution', 'Copywriting'], details: 'Desain feed Instagram profesional untuk satu post.' },
-      { id: 'soc-manage', name: 'MANAGE SOSIAL MEDIA', type: 'Management', price: 'Rp 1.000.000', features: ['Content Planning', 'Posting Schedule', 'Engagement Strategy'], details: 'Layanan manajemen sosial media secara menyeluruh.' }
+      { id: 'soc-manage', name: 'CREATE OR CHANGE LOGO', type: 'Design', price: 'Rp 700.000', features: ['Custom Design', 'High Resolution', 'Source File'], details: 'Layanan pembuatan logo baru atau modifikasi logo yang sudah ada.' }
     ],
     banner: [
       { id: 'ban-x', name: 'X-BANNER WISUDA', type: 'Design', price: 'Rp 100.000', features: ['Custom Illustration', 'Print-ready Format', 'Revisions'], details: 'Desain X-Banner khusus untuk acara wisuda yang berkesan.' },

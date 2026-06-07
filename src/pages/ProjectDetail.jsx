@@ -16,7 +16,7 @@ const projects = [
   },
   {
     id: 'pos-mobile',
-    title: 'Aplikasi Kasir Mobile POS',
+    title: 'Aplikasi Pencatatan Keuangan',
     category: 'mobile',
     img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     tech: 'React Native, API, Database',
@@ -25,25 +25,27 @@ const projects = [
   },
   {
     id: 'cafe-social',
-    title: 'Manajemen Instagram Cafe',
+    title: 'Create Logo or Change Logo',
     category: 'social',
     img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     tech: 'Social Media Management, Design',
     description: 'Pengelolaan sosial media Instagram secara profesional, mulai dari perencanaan konten, pembuatan desain feed resolusi tinggi, hingga strategi engagement.',
-    linkType: 'figma'
+    linkType: 'figma',
+    link: 'https://www.figma.com/design/ff6B1OISFTmR1S8PFBRVWQ/Project-The-Tumpul-s?node-id=163-231&t=JCI1AWrhzX3oPGhF-1'
   },
   {
     id: 'banner-wisuda',
-    title: 'X-Banner Wisuda Mahasiswa',
+    title: 'X-Banner Wisuda',
     category: 'banner',
     img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     tech: 'Graphic Design, Illustration',
     description: 'Desain X-Banner khusus untuk acara wisuda yang berkesan. Menggunakan resolusi tinggi agar siap untuk dicetak.',
-    linkType: 'figma'
+    linkType: 'figma',
+    link: 'https://www.figma.com/design/ff6B1OISFTmR1S8PFBRVWQ/Project-The-Tumpul-s?node-id=167-231&t=YEQ1eZBn1sg5GCu8-1'
   },
   {
     id: 'uiux-portal',
-    title: 'Redesign UI/UX Portal Akademik',
+    title: 'UI/UX Aplikasi Kesehatan Tanaman',
     category: 'uiux',
     img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     tech: 'Figma, Wireframing, Prototyping',
@@ -90,12 +92,7 @@ const ProjectDetail = () => {
   }
 
   const getLinkText = () => {
-    if (project.link) {
-        if (project.linkType === 'github') return 'View GitHub Repo';
-        return project.linkType === 'figma' ? 'View Figma Design' : 'View Live Hosting';
-    }
-    if (project.linkType === 'figma') return 'View Figma (Link will be added soon)';
-    return 'View Live Hosting (Link will be added soon)';
+    return 'See Result';
   };
 
   return (
