@@ -70,7 +70,7 @@ const projects = [
     tech: 'React, Frontend, Animation',
     description: 'Website undangan pernikahan digital yang elegan, modern, dan interaktif. Dilengkapi dengan animasi dan fitur RSVP untuk tamu undangan.',
     linkType: 'github',
-    link: 'https://github.com/AzimaF/web-merried'
+    link: 'https://azimaf.github.io/web-merried/'
   }
 ];
 
