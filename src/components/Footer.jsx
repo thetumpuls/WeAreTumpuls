@@ -25,6 +25,12 @@ const Footer = () => {
                 </NavLink>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: '1.6' }}>
                     Creative Digital Agency yang berbasis di Universitas Muhammadiyah Jakarta. Mengasah ide-ide Anda menjadi karya digital yang tajam dan inovatif.
+                </p >
+                <br></br>
+                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                    #TUMBUHBERSAMATUMPUL
+                    <br></br>
+                    #WEARETUMPUL
                 </p>
             </div>
             
