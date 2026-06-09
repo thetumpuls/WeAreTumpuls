@@ -4,29 +4,34 @@ import '../assets/about.css';
 
 const teamMembers = [
     {
-        name: "Fauzul Adhim",
-        role: "Mahasiswa Teknik Arsitektur UMJ",
-        img: "./adhim.JPG"
+        name: "Taufik Hidayat",
+        role: "CHIEF EXECUTIVE OFFICER",
+        img: "./topik.JPG",
+        ig: "https://www.instagram.com/taufikk_hidyt/"
     },
     {
-        name: "Taufik Hidayat",
-        role: "Fresh Graduate Teknik Informatika UMJ",
-        img: "./topik.JPG"
+        name: "Hadi Muhammad Rasyidan",
+        role: "CHIEF OPERATING OFFICER",
+        img: "./hady.JPG",
+        ig: "https://www.instagram.com/hadimrsy/"
+    },
+    {
+        name: "Muhammad Ziqri Nur Akbar",
+        role: "CHIEF MARKETING OFFICER",
+        img: "./foto-jikri.png",
+        ig: "https://www.instagram.com/barrubbangunn/"
+    },
+    {
+        name: "Fauzul Adhim",
+        role: "HEAD SOCIAL MEDIA",
+        img: "./adhim.JPG",
+        ig: "https://www.instagram.com/fauzladhm_/"
     },
     {
         name: "Fauzan Azima",
-        role: "Fresh Graduate Teknik Informatika UMJ",
-        img: "./ojan.JPG"
-    },
-    {
-        name: "Hady Muhammad",
-        role: "Mahasiswa Teknik Sipil UMJ",
-        img: "./hady.JPG"
-    },
-    {
-        name: "Muhammad Zikri",
-        role: "Mahasiswa Teknik Mesin UMJ",
-        img: "./ziqri.png"
+        role: "HEAD PROGRAMMER",
+        img: "./ojan.JPG",
+        ig: "https://www.instagram.com/faoezan.a/"
     }
 ];
 
@@ -113,8 +118,25 @@ const About = () => {
                     </div>
                 </div>
 
-                <div style={{ textAlign: 'center', marginBottom: '3rem', width: '100%', zIndex: 2 }}>
-                    <h2 style={{ fontSize: '2.5rem', color: '#fff', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase' }}>The <span className="neon-text">Founders</span></h2>
+                <div style={{ 
+                    display: 'flex', 
+                    flexWrap: 'wrap', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'center', 
+                    marginBottom: '4rem', 
+                    width: '100%', 
+                    maxWidth: '1200px', 
+                    zIndex: 2, 
+                    gap: '2rem' 
+                }}>
+                    <h2 style={{ fontSize: '3rem', color: '#fff', fontWeight: 900, letterSpacing: '1px', textTransform: 'uppercase', flex: '1 1 300px' }}>
+                        The <br/><span className="neon-text">Founders</span>
+                    </h2>
+                    <div style={{ flex: '1 1 500px', borderLeft: '4px solid var(--neon-green)', paddingLeft: '1.5rem' }}>
+                        <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1.1rem', lineHeight: '1.7' }}>
+                            We offer a comprehensive suite of services to cater to various aspects of a client’s needs. Digital agencies are at the forefront of the digital landscape, combining creative and technical expertise to help clients thrive in the digital world.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="team-grid" style={{
@@ -133,29 +155,64 @@ const About = () => {
                             position: 'relative',
                             width: '320px',
                             height: 'auto',
-                            padding: '2.5rem 1.5rem',
+                            padding: '0',
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',
                             textAlign: 'center',
-                            animation: 'none'
-                        }}>
+                            animation: 'none',
+                            cursor: 'pointer',
+                            overflow: 'hidden'
+                        }}
+                        onClick={() => setActiveCard(activeCard === index ? null : index)}
+                        >
                             <div style={{
-                                width: '140px',
-                                height: '140px',
-                                borderRadius: '50%',
+                                width: '100%',
+                                height: '280px',
                                 overflow: 'hidden',
-                                marginBottom: '1.5rem',
-                                border: '4px solid var(--neon-green)',
-                                boxShadow: '0 10px 20px rgba(163, 255, 0, 0.2)'
+                                borderTopLeftRadius: '20px',
+                                borderTopRightRadius: '20px',
                             }}>
-                                <img src={member.img} alt={member.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', willChange: 'transform' }} />
+                                <img src={member.img} alt={member.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: ['Hadi Muhammad Rasyidan', 'Fauzul Adhim', 'Muhammad Ziqri Nur Akbar'].includes(member.name) ? 'center 25%' : 'center top' }} />
                             </div>
-                            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.8rem', color: '#fff', letterSpacing: '0.5px' }}>{member.name}</h3>
-                            <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.7)', lineHeight: '1.6' }}>{member.role}</p>
+                            <div style={{ padding: '1.5rem', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.8rem', color: '#fff', letterSpacing: '0.5px' }}>{member.name}</h3>
+                                <p className="role-text" style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.7)', lineHeight: '1.6' }}>{member.role}</p>
+                                <div className="ig-icon-container" style={{ 
+                                    display: 'flex', 
+                                    gap: '15px', 
+                                    justifyContent: 'center'
+                                }}>
+                                    <a href={member.ig} target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.6)', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--neon-green)'} onMouseOut={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}>
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
+
+                <style>{`
+                    .team-card .ig-icon-container {
+                        max-height: 0;
+                        opacity: 0;
+                        margin-top: 0;
+                        overflow: hidden;
+                        transition: all 0.3s ease;
+                    }
+                    .team-card:hover .ig-icon-container {
+                        max-height: 50px;
+                        opacity: 1;
+                        margin-top: 10px;
+                    }
+                    .team-card p.role-text {
+                        margin-bottom: 0;
+                        transition: margin 0.3s ease;
+                    }
+                    .team-card:hover p.role-text {
+                        margin-bottom: 1.5rem;
+                    }
+                `}</style>
             </main>
         </>
     );

@@ -25,20 +25,20 @@ const PriceList = () => {
 
   const services = {
     website: [
-      { id: 'web-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 1.500.000', features: ['Single Page Design', 'Responsive & Modern', 'Source Code'], details: 'Layanan pembuatan Landing Page (Front End) profesional untuk Website.' },
-      { id: 'web-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 2.300.000', features: ['Database Architecture', 'API Development', 'Security'], details: 'Layanan pembuatan arsitektur Database (Back End) handal untuk Website.' },
-      { id: 'web-ai', name: 'AI', type: 'Integration', price: 'Rp 2.300.000', features: ['Custom AI Models', 'Smart Automation', 'Analytics'], details: 'Integrasi kecerdasan buatan (AI) mutakhir ke dalam sistem Website Anda.' },
-      { id: 'web-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 3.500.000', features: ['Database Setup', 'AI Integration', 'Advanced API'], details: 'Paket lengkap pembuatan Back End beserta integrasi AI untuk Website.' }
+      { id: 'web-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Single Page Design', 'Responsive & Modern', 'Source Code'], details: 'Layanan pembuatan Landing Page (Front End) profesional untuk Website.' },
+      { id: 'web-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Database Architecture', 'API Development', 'Security'], details: 'Layanan pembuatan arsitektur Database (Back End) handal untuk Website.' },
+      { id: 'web-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Custom AI Models', 'Smart Automation', 'Analytics'], details: 'Integrasi kecerdasan buatan (AI) mutakhir ke dalam sistem Website Anda.' },
+      { id: 'web-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Database Setup', 'AI Integration', 'Advanced API'], details: 'Paket lengkap pembuatan Back End beserta integrasi AI untuk Website.' }
     ],
     mobile: [
-      { id: 'mob-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 1.500.000', features: ['Mobile App UI', 'Responsive Design', 'Source Code'], details: 'Layanan pembuatan tampilan (Front End) untuk Aplikasi Mobile.' },
-      { id: 'mob-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 2.300.000', features: ['Mobile Backend', 'API Development', 'Scalability'], details: 'Layanan pembuatan Database (Back End) khusus untuk Aplikasi Mobile.' },
-      { id: 'mob-ai', name: 'AI', type: 'Integration', price: 'Rp 2.300.000', features: ['Mobile AI Features', 'Smart Processing', 'Optimization'], details: 'Integrasi kecerdasan buatan (AI) ke dalam Aplikasi Mobile.' },
-      { id: 'mob-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 3.500.000', features: ['Complete Backend', 'AI Integration', 'Performance'], details: 'Paket lengkap pembuatan Back End dan integrasi AI untuk Aplikasi Mobile.' }
+      { id: 'mob-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Mobile App UI', 'Responsive Design', 'Source Code'], details: 'Layanan pembuatan tampilan (Front End) untuk Aplikasi Mobile.' },
+      { id: 'mob-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Mobile Backend', 'API Development', 'Scalability'], details: 'Layanan pembuatan Database (Back End) khusus untuk Aplikasi Mobile.' },
+      { id: 'mob-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Mobile AI Features', 'Smart Processing', 'Optimization'], details: 'Integrasi kecerdasan buatan (AI) ke dalam Aplikasi Mobile.' },
+      { id: 'mob-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Complete Backend', 'AI Integration', 'Performance'], details: 'Paket lengkap pembuatan Back End dan integrasi AI untuk Aplikasi Mobile.' }
     ],
     social_media: [
-      { id: 'soc-feed', name: 'FEED INSTAGRAM', type: '(1 FEED)', price: 'Rp 200.000', features: ['Custom Design', 'High Resolution', 'Copywriting'], details: 'Desain feed Instagram profesional untuk satu post.' },
-      { id: 'soc-manage', name: 'CREATE OR CHANGE LOGO', type: 'Design', price: 'Rp 700.000', features: ['Custom Design', 'High Resolution', 'Source File'], details: 'Layanan pembuatan logo baru atau modifikasi logo yang sudah ada.' }
+      { id: 'soc-feed', name: 'FEED INSTAGRAM', type: '(1 FEED)', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Copywriting'], details: 'Desain feed Instagram profesional untuk satu post.' },
+      { id: 'soc-manage', name: 'CREATE LOGO / CHANGE LOGO', type: 'Design', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Source File'], details: 'Layanan pembuatan logo baru atau modifikasi logo yang sudah ada.' }
     ],
     banner: [
       { id: 'ban-x', name: 'X-BANNER WISUDA', type: 'Design', price: 'Rp 100.000', features: ['Custom Illustration', 'Print-ready Format', 'Revisions'], details: 'Desain X-Banner khusus untuk acara wisuda yang berkesan.' },
@@ -147,7 +147,7 @@ const PriceList = () => {
                     
                     <button onClick={() => {
                         const text = `Halo The Tumpul's, saya tertarik untuk memesan layanan ${selectedService.name} ${selectedService.type}. Boleh minta info lebih lanjut?`;
-                        window.open(`https://wa.me/6285781021417?text=${encodeURIComponent(text)}`, '_blank');
+                        window.open(`https://wa.me/6285869557636?text=${encodeURIComponent(text)}`, '_blank');
                     }} style={{
                       background: 'var(--neon-green)',
                       color: '#000',

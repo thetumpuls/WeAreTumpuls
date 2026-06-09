@@ -6,6 +6,7 @@ import Work from './pages/Work';
 import ProjectDetail from './pages/ProjectDetail';
 import PriceList from './pages/PriceList';
 import Contact from './pages/Contact';
+import ConsultationCTA from './components/ConsultationCTA';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/price-list.html" element={<PriceList />} />
           <Route path="/contact.html" element={<Contact />} />
         </Routes>
+        <ConsultationCTA />
         <Footer />
       </div>
     </Router>
