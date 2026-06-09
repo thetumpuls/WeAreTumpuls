@@ -60,7 +60,8 @@ const projects = [
     img: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     tech: 'AI Integration, React, Python',
     description: 'Dashboard analitik berbasis Artificial Intelligence (AI). Menampilkan visualisasi data cerdas secara real-time dan analisis otomatis.',
-    linkType: 'hosting'
+    linkType: 'hosting',
+    link: 'https://azimaf.github.io/lms-uks/'
   },
   {
     id: 'wedding-website',
