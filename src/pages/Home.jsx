@@ -97,7 +97,7 @@ const Home = () => {
                             TUMPUL'S
                         </h1>
                         <p style={{ maxWidth: '600px', textAlign: 'center', marginTop: '1rem', fontSize: '1.2rem', lineHeight: '1.6', color: 'rgba(255, 255, 255, 0.8)' }}>
-                            Creative Digital Agency. Kami berdedikasi untuk memberikan solusi terbaik di bidang pengembangan web, desain kreatif, social media management, dan teknologi AI terkini.
+                            Creative Digital Agency yang bergerak untuk memberikan hasil terbaik dalam bidang pengembangan web, desain user interface, social media management, dan aplikasi mobile sesuai kebutuhan client.
                         </p>
                     </div>
 
@@ -161,14 +161,15 @@ const Home = () => {
                 <div className="services-container">
                     {/* Card 1 */}
                     <div className="service-card" onClick={() => navigate('/price-list.html')} style={{ cursor: 'pointer' }}>
-                        <h3>FRONTEND<br />DEVELOPMENT</h3>
-                        <p>Creating beautiful and interactive user interfaces for modern web.</p>
+                        <h3>SOCIAL MEDIA<br />MANAGEMENT</h3>
+                        <p>Growing your online presence with engaging content and strategic campaigns.</p>
                         <div className="tag-row">
-                            <div className="tag blue-tag">
-                                <img src="./React-icon.png" alt="React" className="tag-icon" />
-                                <span>React.js</span>
+                            <div className="tag neon-tag">
+                                <span>Engagement</span>
                             </div>
-                            <div className="tag neon-tag">HTML/CSS</div>
+                            <div className="tag solid-neon-tag">
+                                <span>Figma</span>
+                            </div>
                         </div>
                     </div>
 
@@ -178,23 +179,15 @@ const Home = () => {
                     </svg>
 
                     {/* Card 2 */}
-                    <div className="service-card center-card" onClick={() => navigate('/price-list.html')} style={{ cursor: 'pointer' }}>
-                        <h3>MODERN & RESPONSIVE<br />WEB DESIGNS</h3>
-                        <p>Ensuring your website looks perfect on all devices and screens.</p>
+                    <div className="service-card" onClick={() => navigate('/price-list.html')} style={{ cursor: 'pointer' }}>
+                        <h3>FRONTEND<br />DEVELOPMENT</h3>
+                        <p>Creating beautiful and interactive user interfaces for modern web.</p>
                         <div className="tag-row">
-                            <div className="tag dark-blue-tag">
-                                <span>Figma Design</span>
+                            <div className="tag blue-tag">
+                                <img src="./React-icon.png" alt="React" className="tag-icon" />
+                                <span>React.js</span>
                             </div>
-                            <div className="tag solid-neon-tag">
-                                <span>UI/UX</span>
-                            </div>
-                        </div>
-                        {/* Small badge inside center card */}
-                        <div className="mini-badge">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <line x1="5" y1="19" x2="19" y2="5"></line>
-                                <polyline points="9 5 19 5 19 15"></polyline>
-                            </svg>
+                            <div className="tag neon-tag">HTML/CSS</div>
                         </div>
                     </div>
 

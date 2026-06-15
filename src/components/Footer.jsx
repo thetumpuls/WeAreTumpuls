@@ -28,9 +28,9 @@ const Footer = () => {
                 </p >
                 <br></br>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                    #TUMBUHBERSAMATUMPUL
+                    #wearetumpul
                     <br></br>
-                    #WEARETUMPUL
+                    #tumbuhbersamatumpul
                 </p>
             </div>
             

@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="navbar">
       <NavLink to="/" style={{ textDecoration: 'none' }}>
         <div className="logo">
-          <img src="./logo-tumpul.png" alt="The Tumpul's Logo" style={{ height: '40px', objectFit: 'contain' }} />
+          <img src="./Frame 3.png" alt="The Tumpul's Logo" style={{ height: '40px', objectFit: 'contain' }} />
         </div>
       </NavLink>
       <div className="nav-links">
