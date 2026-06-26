@@ -25,28 +25,28 @@ const PriceList = () => {
 
   const services = {
     website: [
-      { id: 'web-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Single Page Design', 'Responsive & Modern', 'Source Code'], details: 'Layanan pembuatan Landing Page (Front End) profesional untuk Website.' },
-      { id: 'web-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Database Architecture', 'API Development', 'Security'], details: 'Layanan pembuatan arsitektur Database (Back End) handal untuk Website.' },
-      { id: 'web-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Custom AI Models', 'Smart Automation', 'Analytics'], details: 'Integrasi kecerdasan buatan (AI) mutakhir ke dalam sistem Website Anda.' },
-      { id: 'web-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Database Setup', 'AI Integration', 'Advanced API'], details: 'Paket lengkap pembuatan Back End beserta integrasi AI untuk Website.' }
+      { id: 'web-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Single Page Design', 'Responsive & Modern', 'Source Code', 'SEO Friendly', 'Fast Loading'], details: 'Layanan pembuatan Landing Page (Front End) profesional untuk Website.' },
+      { id: 'web-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Database Architecture', 'API Development', 'Security', 'Data Backup', 'Optimized Queries'], details: 'Layanan pembuatan arsitektur Database (Back End) handal untuk Website.' },
+      { id: 'web-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Custom AI Models', 'Smart Automation', 'Analytics', 'Natural Language Processing', 'Predictive Analysis'], details: 'Integrasi kecerdasan buatan (AI) mutakhir ke dalam sistem Website Anda.' },
+      { id: 'web-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Database Setup', 'AI Integration', 'Advanced API', 'Scalable Architecture', 'Real-time Processing'], details: 'Paket lengkap pembuatan Back End beserta integrasi AI untuk Website.' }
     ],
     mobile: [
-      { id: 'mob-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Mobile App UI', 'Responsive Design', 'Source Code'], details: 'Layanan pembuatan tampilan (Front End) untuk Aplikasi Mobile.' },
-      { id: 'mob-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Mobile Backend', 'API Development', 'Scalability'], details: 'Layanan pembuatan Database (Back End) khusus untuk Aplikasi Mobile.' },
-      { id: 'mob-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Mobile AI Features', 'Smart Processing', 'Optimization'], details: 'Integrasi kecerdasan buatan (AI) ke dalam Aplikasi Mobile.' },
-      { id: 'mob-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Complete Backend', 'AI Integration', 'Performance'], details: 'Paket lengkap pembuatan Back End dan integrasi AI untuk Aplikasi Mobile.' }
+      { id: 'mob-landing', name: 'LANDINGPAGE', type: '(FRONT END)', price: 'Rp 700.000', features: ['Mobile App UI', 'Responsive Design', 'Source Code', 'Interactive Prototype', 'User-Friendly Navigation'], details: 'Layanan pembuatan tampilan (Front End) untuk Aplikasi Mobile.' },
+      { id: 'mob-db', name: 'DATABASE', type: '(BACK END)', price: 'Rp 1.500.000', features: ['Mobile Backend', 'API Development', 'Scalability', 'Secure Authentication', 'Cloud Storage'], details: 'Layanan pembuatan Database (Back End) khusus untuk Aplikasi Mobile.' },
+      { id: 'mob-ai', name: 'AI', type: 'Integration', price: 'Rp 1.500.000', features: ['Mobile AI Features', 'Smart Processing', 'Optimization', 'Image Recognition', 'Voice Assistant Integration'], details: 'Integrasi kecerdasan buatan (AI) ke dalam Aplikasi Mobile.' },
+      { id: 'mob-backend-ai', name: 'BACK END + AI', type: 'Full Package', price: 'Rp 2.000.000', features: ['Complete Backend', 'AI Integration', 'Performance', 'Seamless Sync', 'Advanced Analytics'], details: 'Paket lengkap pembuatan Back End dan integrasi AI untuk Aplikasi Mobile.' }
     ],
     social_media: [
-      { id: 'soc-feed', name: 'FEED INSTAGRAM', type: '(1 FEED)', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Copywriting'], details: 'Desain feed Instagram profesional untuk satu post.' },
-      { id: 'soc-manage', name: 'CREATE LOGO / CHANGE LOGO', type: 'Design', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Source File'], details: 'Layanan pembuatan logo baru atau modifikasi logo yang sudah ada.' }
+      { id: 'soc-feed', name: 'FEED INSTAGRAM', type: '(1 FEED)', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Copywriting', 'Brand Alignment', 'Engagement Optimized'], details: 'Desain feed Instagram profesional untuk satu post.' },
+      { id: 'soc-manage', name: 'CREATE LOGO / CHANGE LOGO', type: 'Design', price: 'Rp 150.000', features: ['Custom Design', 'High Resolution', 'Source File', 'Vector Format', 'Multiple Variations'], details: 'Layanan pembuatan logo baru atau modifikasi logo yang sudah ada.' }
     ],
     banner: [
-      { id: 'ban-x', name: 'X-BANNER WISUDA', type: 'Design', price: 'Rp 100.000', features: ['Custom Illustration', 'Print-ready Format', 'Revisions'], details: 'Desain X-Banner khusus untuk acara wisuda yang berkesan.' },
-      { id: 'ban-biasa', name: 'BANNER BIASA', type: 'Design', price: 'Rp 100.000', features: ['Custom Design', 'High-Res Graphics', 'Fast Delivery'], details: 'Desain banner standar untuk berbagai keperluan marketing.' }
+      { id: 'ban-x', name: 'X-BANNER WISUDA', type: 'Design', price: 'Rp 100.000', features: ['Custom Illustration', 'Print-ready Format', 'Revisions', 'High Quality Graphics', 'Eye-catching Design'], details: 'Desain X-Banner khusus untuk acara wisuda yang berkesan.' },
+      { id: 'ban-biasa', name: 'BANNER BIASA', type: 'Design', price: 'Rp 100.000', features: ['Custom Design', 'High-Res Graphics', 'Fast Delivery', 'Brand Matched', 'Versatile Sizes'], details: 'Desain banner standar untuk berbagai keperluan marketing.' }
     ],
     uiux: [
-      { id: 'ui-mob', name: 'UI MOBILE', type: 'Design', price: 'Rp 300.000', features: ['Mobile Screens', 'Wireframing', 'Prototyping'], details: 'Desain User Interface (UI) profesional untuk Aplikasi Mobile.' },
-      { id: 'ui-web', name: 'UI WEBSITE', type: 'Design', price: 'Rp 300.000', features: ['Web Pages', 'Responsive Grid', 'Prototyping'], details: 'Desain User Interface (UI) profesional untuk Website.' }
+      { id: 'ui-mob', name: 'UI MOBILE', type: 'Design', price: 'Rp 300.000', features: ['Mobile Screens', 'Wireframing', 'Prototyping', 'User Flow Design', 'Interactive Elements'], details: 'Desain User Interface (UI) profesional untuk Aplikasi Mobile.' },
+      { id: 'ui-web', name: 'UI WEBSITE', type: 'Design', price: 'Rp 300.000', features: ['Web Pages', 'Responsive Grid', 'Prototyping', 'Accessibility Focused', 'Modern Aesthetics'], details: 'Desain User Interface (UI) profesional untuk Website.' }
     ]
   };
 
@@ -143,10 +143,8 @@ const PriceList = () => {
                       </ul>
                     </div>
                     
-                    <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: 'var(--neon-green)', marginBottom: '1.5rem' }}>{selectedService.price}</div>
-                    
                     <button onClick={() => {
-                        const text = `Halo The Tumpul's, saya tertarik untuk memesan layanan ${selectedService.name} ${selectedService.type}. Boleh minta info lebih lanjut?`;
+                        const text = `Halo The Tumpul's, saya tertarik untuk konsultasi layanan ${selectedService.name} ${selectedService.type}. Boleh minta info lebih lanjut?`;
                         window.open(`https://wa.me/6285869557636?text=${encodeURIComponent(text)}`, '_blank');
                     }} style={{
                       background: 'var(--neon-green)',
@@ -157,9 +155,10 @@ const PriceList = () => {
                       fontWeight: 'bold',
                       cursor: 'pointer',
                       width: '100%',
+                      marginTop: '1.5rem',
                       transition: 'all 0.3s'
                     }} onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'} onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}>
-                      Pesan Sekarang
+                      Konsultasi
                     </button>
                   </div>
                 </div>
@@ -211,8 +210,7 @@ const PriceList = () => {
                                         <li key={idx}>{feature}</li>
                                       ))}
                                   </ul>
-                                  <div style={{ marginTop: 'auto', fontWeight: 'bold', fontSize: '1.2rem', color: '#fff', textAlign: 'center' }}>{service.price}</div>
-                                  <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--neon-green)', opacity: 0.7, textAlign: 'center' }}>Klik untuk detail</div>
+                                  <div style={{ marginTop: 'auto', fontSize: '0.8rem', color: 'var(--neon-green)', opacity: 0.7, textAlign: 'center' }}>Klik untuk detail</div>
                                 </div>
                               ))}
                           </div>
