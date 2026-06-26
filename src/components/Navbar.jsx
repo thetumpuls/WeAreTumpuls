@@ -29,7 +29,10 @@ const Navbar = () => {
         <NavLink to="/contact.html" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>
       </div>
       <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <button className="btn-connect desktop-btn" onClick={() => window.open('https://wa.me/6285869557636', '_blank')}>Hire Now</button>
+          <button className="btn-connect desktop-btn" onClick={() => {
+              const text = `Halo The Tumpul's, saya tertarik untuk konsultasi layanan. Boleh minta info lebih lanjut?`;
+              window.open(`https://wa.me/6285869557636?text=${encodeURIComponent(text)}`, '_blank');
+          }}>Konsultasi</button>
           
           <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -55,7 +58,10 @@ const Navbar = () => {
             <NavLink to="/price-list.html">Price List</NavLink>
             <NavLink to="/work.html">Our Works</NavLink>
             <NavLink to="/contact.html">Contact</NavLink>
-            <button className="btn-connect" onClick={() => window.open('https://wa.me/6285869557636', '_blank')} style={{ marginTop: '2rem' }}>Hire Now</button>
+            <button className="btn-connect" onClick={() => {
+                const text = `Halo The Tumpul's, saya tertarik untuk konsultasi layanan. Boleh minta info lebih lanjut?`;
+                window.open(`https://wa.me/6285869557636?text=${encodeURIComponent(text)}`, '_blank');
+            }} style={{ marginTop: '2rem' }}>Konsultasi</button>
         </div>
     </div>
     </>
